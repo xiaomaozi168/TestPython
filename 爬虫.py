@@ -1,7 +1,8 @@
+
 import urllib.request
 import random
 
-data = urllib.request.urlopen("https://www.jd.com/").read().decode("utf-8","ignore")
+#data = urllib.request.urlopen("https://www.jd.com/").read().decode("utf-8","ignore")
 #print(data)
 
 uapools=[
