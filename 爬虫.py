@@ -13,7 +13,7 @@ def UA():
     opener = urllib.request.build_opener()
     thisua = random.choice(uapools)
     ua = ("User-Agent",thisua)
-    opener.addheaders = [ua]
+    opener.addheaders = [ua] 
     urllib.request.install_opener(opener)
     print("当前使用的UA："+str(thisua))
 
