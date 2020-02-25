@@ -1,6 +1,19 @@
 import re
 
 '''
+测试pywin32
+'''
+from win32.win32gui import *
+windows = []
+def get_windows(hwnd,param):
+    if IsWindow(hwnd) and IsWindowEnabled(hwnd) and IsWindowVisible(hwnd): # 用来过滤
+        windows.append(GetWindowText(hwnd))  # 获得窗口标题
+EnumWindows(get_windows, 0)
+for i in windows:
+    print(i)
+
+
+'''
 正则表达式练习
 '''
 print("------------------------------------------------------")
