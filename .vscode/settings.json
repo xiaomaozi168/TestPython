@@ -1,10 +1,11 @@
 {
     "python.pythonPath": "D:\\python\\python.exe",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    }
-    
+    "python.linting.enabled":true, 
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{based_on_style: chromium, indent_width: 4}"
+    ] 
 }
